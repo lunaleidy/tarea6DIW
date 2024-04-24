@@ -50,18 +50,18 @@ nav li {
 }
 
 nav a {
-    display: inline-block; 
-    text-decoration: none; 
-    color: #050505; 
-    background-color: #6eca71; 
-    border-radius: 5px; 
-    box-shadow: 3px 3px 5px rgba(245, 234, 234, 0.5); 
+    display: inline-block;
+    text-decoration: none;
+    color: #050505;
+    background-color: #6eca71;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(245, 234, 234, 0.5);
     width: 100%;
     padding: 5px;
 }
 
 nav a:hover {
-    background-color: #45a049; 
+    background-color: #45a049;
     border-color: #333;
 }
 

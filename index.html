@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tarea DIW06 Leidy Luna</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
     <!-- Apartado 1: Estructura de la página web -->
@@ -12,16 +12,16 @@
     <div id="container">
       <nav>
         <ul>
-          <!-- Apartado 2: Contenido de la página web: Audios-->
-          <li><a href="#audios">Audios</a></li>
-          <li><a href="#video">Vídeo</a></li>
+          <!-- Apartado 2 y 4: Contenido de la página web: Audios y Vídeo-->
+          <li><a href="#" id="linkAudios">Audios</a></li>
+          <li><a href="#" id="linkVideo">Vídeo</a></li>
         </ul>
       </nav>
       <main>
-        <!-- Apartado 2: Contenido de la página web: Audios-->
-        <div id="audios">
+        <!-- Apartado 2 y 3: Contenido de la página web: Audios-->
+        <div id="audios" style="display: none;">
           <!-- Audio 1 -->
-          <section class="audio-container">
+          <section class="audio-container" id="audio1">
             <h3>Alone - Color Out</h3>
             <audio controls>
               <source src="audios/Alone_-_Color_Out-converter.mp3" type="audio/mpeg" />
@@ -29,7 +29,7 @@
             <p>Formato: MP3, Frecuencia: 44100 Khz</p>
           </section>
           <!-- Audio 2 -->
-          <section class="audio-container">
+          <section class="audio-container" id="audio2">
             <h3>Better - Square a Saw</h3>
             <audio controls>
               <source src="audios/Better_-_Square_a_Saw-converter.wav" type="audio/wav" />
@@ -37,7 +37,7 @@
             <p>Formato: WAV, Frecuencia: 22050 Khz</p>
           </section>
           <!-- Audio 3 -->
-          <section class="audio-container">
+          <section class="audio-container" id="audio3">
             <h3>Good Morning - Monsieur Chance</h3>
             <audio controls>
               <source src="audios/Good_Morning_-_Monsieur_Chance-converter.ogg" type="audio/ogg" />
@@ -45,7 +45,7 @@
             <p>Formato: OGG, Frecuencia: 48000 Khz</p>
           </section>
           <!-- Audio 4 -->
-          <section class="audio-container">
+          <section class="audio-container" id="audio4">
             <h3>Like I Do - I.D.F.X</h3>
             <audio controls>
               <source src="audios/I._D._F._X._-_Like_I_Do-converter.aiff" type="audio/aiff" />
@@ -53,7 +53,7 @@
             <p>Formato: AIFF, Frecuencia: 96000 Khz</p>
           </section>
           <!-- Audio 5 -->
-          <section class="audio-container">
+          <section class="audio-container" id="audio5">
             <h3>Reason to Stay - lilac frog (feat. undy)</h3>
             <audio controls>
               <source src="audios/lilac_frog_-_Reason_to_Stay-converter.flac" type="audio/flac" />
@@ -62,7 +62,7 @@
           </section>
         </div>
         <!-- Apartado 4: Contenido de la página web: Videos-->
-        <section id="video">
+        <section id="video" style="display: none;">
           <h3>Video de Lugares para Viajar</h3>
           <video width="320" height="240" controls>
               <source src="videos/proyectoVideo.mp4" type="video/mp4">
@@ -78,8 +78,18 @@
             <a href="https://www.dogmazic.net" target="_blank">Dogmazic</a>
           </li>
         </ul>
+        <p>Enlaces a los audios individualmente:</p>
+        <ul>
+          <li><a href="#" data-audio="audio1">Alone - Color Out</a></li>
+          <li><a href="#" data-audio="audio2">Better - Square a Saw</a></li>
+          <li><a href="#" data-audio="audio3">Good Morning - Monsieur Chance</a></li>
+          <li><a href="#" data-audio="audio4">Like I Do - I.D.F.X</a></li>
+          <li><a href="#" data-audio="audio5">Reason to Stay - lilac frog (feat. undy)</a></li>
+        </ul>        
       </aside>
     </div>
     <footer>Leidy Estefany Luna Romero</footer>
+    <!-- Cargar JavaScript para que cada sección se muestre u oculte, un clic muestra otro clic oculta la sección-->
+    <script src="js/multimedia.js"></script>
   </body>
 </html>
